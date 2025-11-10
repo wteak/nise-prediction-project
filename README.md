@@ -4,13 +4,15 @@
 * 예: "본 프로젝트는 태양광 에너지의 핵심 변수인 '일사량(nins)'을 예측하는 AI 모델 개발 프로젝트입니다. 재생 에너지의 간헐성 문제를 해결하여..."
 
 # 2. 사용 기술 (Tech Stack)
-* 언어: Python 3.9
+* 언어: Python 3.13.7
 * 주요 라이브러리: Pandas, Numpy, Scikit-learn, LightGBM, Matplotlib
 
 # 3. 프로젝트 구조 (Directory)
 (코드 설명을 여기에 '요약'해서 넣습니다.)
-* `data/`: 학습에 사용된 .csv 원본 데이터
-* `preprocessing.py`: 결측치 처리 및 데이터 전처리 스크립트
+* `train.csv`: 학습에 사용된 .csv 원본 데이터
+* `test.csv` : 추정해야할 .csv 데이터
+* `preprocessing.ipynb`: 결측치 처리 및 데이터 전처리파일을 생성하는 주피터 노트북
+* `second file`:first file을 통해 생성한 파일을 불러와 
 * `model.py`: LightGBM 모델 학습 및 평가 코드
 * `main.ipynb`: 전체 과정을 시각화하고 실행하는 주피터 노트북
 
