@@ -207,3 +207,10 @@ marimo/_lsp/
 __marimo__/
 # Data files
 *.csv
+*.feather
+*.xlsx
+
+# Model files
+*.joblib
+*.pkl
+.ipynb_checkpoints
