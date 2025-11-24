@@ -9,6 +9,52 @@
 * **참가 형태:** 팀 프로젝트 (우택 외 1명)
 * **주요 목표:** 대용량 시계열 데이터 파이프라인 구축 및 결측치 복원 최적화
 
+
+###  데이터 상세 정보 
+
+#### 1. 기본 정보 및 타겟
+| 변수명 | 설명 | 단위 |
+| :--- | :--- | :---: |
+| `time` | 데이터 측정 시간 | - |
+| `pv_id` | 발전소 고유 ID | - |
+| `type` | 데이터 구분 (train/test) | - |
+| `coord1`, `coord2` | 발전소 위치 좌표 (보안상 익명화) | - |
+| **`nins`** | **[Target] 태양광 일사량** | **W/m²** |
+| `energy` | 발전량 (Train 데이터에만 존재) | kWh |
+
+#### 2. 기상 관측소 A 데이터 (Weather Station A)
+| 변수명 | 설명 | 단위 |
+| :--- | :--- | :---: |
+| `temp_a` | 대기 중의 실제 온도 | °C |
+| `humidity` | 습도 (상대습도) | % |
+| `wind_spd_a` | 풍속 | km/h |
+| `wind_dir_a` | 풍향 | ° |
+| `cloud_a` | 구름량 (운량) | % |
+| `rain` | 강우량 | mm |
+| `snow` | 강설량 | mm |
+| `ground_press` | 지면 기압 | hPa |
+| `temp_max` / `min` | 해당 시간대의 최고/최저 기온 | °C |
+
+#### 3. 기상 관측소 B 및 파생 데이터 (Weather Station B & Derived)
+| 변수명 | 설명 | 단위 |
+| :--- | :--- | :---: |
+| `temp_b` | 기상관측소 B의 기온 | °C |
+| `rel_hum` | 상대습도 | % |
+| `wind_spd_b` | 풍속 | km/h |
+| `wind_dir_b` | 풍향 | ° |
+| `cloud_b` | 구름량 | % |
+| `pressure` | 대기압 | hPa |
+| `precip_1h` | 1시간 강수량 | mm |
+| `appr_temp` | 체감 온도 | °C |
+| `real_feel_temp` | 날씨 조건(바람, 습도) 반영 체감 온도 | °C |
+| `real_feel_temp_shade` | 그늘 체감 온도 | °C |
+| `wind_chill_temp` | 풍속 냉각 온도 | °C |
+| `dew_point` | 이슬점 | °C |
+| `uv_idx` | 자외선 지수 | - |
+| `vis` | 가시거리 | km |
+| `ceiling` | 구름층 높이 (천장고) | m |
+| `wind_gust_spd` | 돌풍 속도 | km/h |
+
 ---
 
 ## 2. 사용 기술 (Tech Stack)
