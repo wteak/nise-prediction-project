@@ -87,10 +87,10 @@ nins-prediction-project/
 │   └── 03_interpolation.ipynb  # 결측치 보간 및 군집화 로직
 │
 └── archive/                  # [연구 기록] 시행착오 로직들
-    ├── exp_01_hybrid_interpolation.ipynb # 복합 보간법 시도 기록
-    ├── exp_02_feature_engineering_full.ipynb # 초기 파생변수 생성 실험
-    ├── exp_03_clustering_and_mapping.ipynb   # 맵핑 방식 접근 시도 및 군집
-    └── exp_04_modeling_legacy.ipynb        # 모델 학습 실험
+    ├── 01_hybrid_interpolation.ipynb # 복합 보간법 시도 기록
+    ├── 02_feature_engineering_full.ipynb # 초기 파생변수 생성 실험
+    ├── 03_clustering_and_mapping.ipynb   # 맵핑 방식 접근 시도 및 군집
+    └── 04_modeling_legacy.ipynb        # 모델 학습 실험
 ```
 ---    
 ## 4. 핵심 수행 내용
