@@ -72,23 +72,25 @@
 ```bash
 nins-prediction-project/
 │
-├── README.md                 # 프로젝트 설명서 (현재 파일)
+├── README.md                 # 프로젝트 설명서
 ├── main                      # 최종코드
 ├── requirements.txt          # 필요 라이브러리 목록
-│── data/                     # 용량 문제 및 보안 문제로 저장소에 포함되지 않았습니다. 
+│
+├── data/                     # (용량 및 보안 문제로 저장소에 포함되지 않았습니다)
 │   ├── train.csv             # 학습 데이터
 │   ├── test.csv              # 추론 데이터
 │   └── sample_submission.csv # 제출 양식 파일
-├── modules/                  # 최종 코드에 직접적으로 활용된 로직들
-│   ├── 01.ipynb  # CSV 대용량 처리 및 Feather 변환
-│   ├── 02.ipynb  # 타겟 분리 및 데이터 통합
-│   └── 03.ipynb  # 결측치 보간 및 군집화 로직
+│
+├── modules/                    #최종 코드를 구성하는 성공한 로직들
+│   ├── 01_data_loader.ipynb    # CSV 대용량 처리 및 Feather 변환
+│   ├── 02_preprocessing.ipynb  # 타겟 분리 및 데이터 통합
+│   └── 03_interpolation.ipynb  # 결측치 보간 및 군집화 로직
 │
 └── archive/                  # [연구 기록] 시행착오 로직들
-    ├── 01.ipynb   # 복합 보간법 시도 및 메모리 문제로 인한 chunk병합
-    ├── 02.ipynb   # 초기 파생변수 생성 실험
-    ├── 03.ipynb   # 맵핑 방식 접근 시도 및 군집
-    └── 04.ipynb   # 모델 학습 실험
+    ├── exp_01_hybrid_interpolation.ipynb # 복합 보간법 시도 기록
+    ├── exp_02_feature_engineering_full.ipynb # 초기 파생변수 생성 실험
+    ├── exp_03_clustering_and_mapping.ipynb   # 맵핑 방식 접근 시도 및 군집
+    └── exp_04_modeling_legacy.ipynb        # 모델 학습 실험
 ```
 ---    
 ## 4. 핵심 수행 내용
